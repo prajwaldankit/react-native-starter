@@ -1,10 +1,10 @@
 import {
-    TabList,
-    TabListProps,
-    Tabs,
-    TabSlot,
-    TabTrigger,
-    TabTriggerSlotProps,
+  TabList,
+  TabListProps,
+  Tabs,
+  TabSlot,
+  TabTrigger,
+  TabTriggerSlotProps,
 } from "expo-router/ui";
 import { SymbolView } from "expo-symbols";
 import { Pressable, View } from "react-native";
@@ -43,7 +43,7 @@ export function TabButton({
     <Pressable {...props} className="active:opacity-70">
       <ThemedView
         type={isFocused ? "backgroundSelected" : "backgroundElement"}
-        className="px-4 py-1 rounded-2xl"
+        className="rounded-2xl px-4 py-1"
       >
         <ThemedText
           type="small"
@@ -62,11 +62,11 @@ export function CustomTabList(props: TabListProps) {
   return (
     <View
       {...props}
-      className="absolute flex-row justify-center items-center p-4 w-full"
+      className="absolute w-full flex-row items-center justify-center p-4"
     >
       <ThemedView
         type="backgroundElement"
-        className="flex-row items-center gap-2 mx-auto px-8 py-2 rounded-[32px] w-full"
+        className="mx-auto w-full flex-row items-center gap-2 rounded-[32px] px-8 py-2"
         style={{ maxWidth: MaxContentWidth }}
       >
         <ThemedText type="smallBold" className="mr-auto">
@@ -76,7 +76,7 @@ export function CustomTabList(props: TabListProps) {
         {props.children}
 
         <ExternalLink href="https://docs.expo.dev" asChild>
-          <Pressable className="flex-row justify-center items-center gap-1 ml-4">
+          <Pressable className="ml-4 flex-row items-center justify-center gap-1">
             <ThemedText type="link">Docs</ThemedText>
             <SymbolView
               tintColor={theme.text}

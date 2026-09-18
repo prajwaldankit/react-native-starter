@@ -49,7 +49,7 @@ export default function TabTwoScreen() {
             <Pressable className="active:opacity-70">
               <ThemedView
                 type="backgroundElement"
-                className="flex-row justify-center items-center gap-1 px-6 py-2 rounded-[32px]"
+                className="flex-row items-center justify-center gap-1 rounded-[32px] px-6 py-2"
               >
                 <ThemedText type="link">Expo documentation</ThemedText>
                 <SymbolView
@@ -93,7 +93,7 @@ export default function TabTwoScreen() {
               </ThemedText>
               <Image
                 source={require("@/assets/images/tutorial-web.png")}
-                className="mt-2 rounded-2xl w-full aspect-[296/171]"
+                className="mt-2 aspect-[296/171] w-full rounded-2xl"
               />
             </ThemedView>
           </Collapsible>
@@ -107,7 +107,7 @@ export default function TabTwoScreen() {
             </ThemedText>
             <Image
               source={require("@/assets/images/react-logo.png")}
-              className="self-center w-[100px] h-[100px]"
+              className="h-[100px] w-[100px] self-center"
             />
             <ExternalLink href="https://reactnative.dev/docs/images">
               <ThemedText type="linkPrimary">Learn more</ThemedText>

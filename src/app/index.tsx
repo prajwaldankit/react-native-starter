@@ -26,9 +26,9 @@ function getDevMenuHint() {
 
 export default function HomeScreen() {
   return (
-    <ThemedView className="flex-1 justify-center items-center gap-4">
+    <ThemedView className="flex-1 items-center justify-center gap-4">
       <SafeAreaView>
-        <ThemedView className="justify-center items-center gap-4">
+        <ThemedView className="items-center justify-center gap-4">
           <ThemedText type="title">Hello World!</ThemedText>
         </ThemedView>
       </SafeAreaView>
