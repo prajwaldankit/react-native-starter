@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/**
+ * Color tokens, kept in sync with `Colors` in src/constants/theme.ts.
+ * The Tailwind classes below (e.g. `bg-background`, `text-text-secondary`) read
+ * these variables and switch automatically with the OS color scheme.
+ * `Colors`/`useTheme` still exist for native component props that require a
+ * resolved color value (e.g. `tintColor`, `NativeTabs` colors) rather than a className.
+ */
+:root {
+  --color-text: #000000;
+  --color-background: #ffffff;
+  --color-background-element: #f0f0f3;
+  --color-background-selected: #e0e1e6;
+  --color-text-secondary: #60646c;
+  --color-link-primary: #3c87f7;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-text: #ffffff;
+    --color-background: #000000;
+    --color-background-element: #212225;
+    --color-background-selected: #2e3135;
+    --color-text-secondary: #b0b4ba;
+    --color-link-primary: #3c87f7;
+  }
+}
